@@ -7,7 +7,9 @@
 //
 
 #import "TabBarViewController.h"
-
+#import "MakeViewController.h"
+#import "MyViewController.h"
+#import "SquareViewController.h"
 @interface TabBarViewController ()
 
 @end
@@ -16,7 +18,51 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self childView];
+    
     // Do any additional setup after loading the view.
+}
+- (void)childView
+{
+    SquareViewController * square = [[SquareViewController alloc]init];
+    
+    square.navigationItem.title = @"广场";
+    
+    [self addchildVC:square image:[UIImage imageNamed:@"guangchang"]selectImage:[UIImage imageNamed:@"guangchanglv"] edg:UIEdgeInsetsMake(5, 0, -5, 0)];
+    
+    
+    UIImage *xrImage = [UIImage imageNamed:@"zhizuohui"];
+    xrImage = [xrImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    UIImage * lvimage = [UIImage imageNamed:@"zhizuo"];
+    lvimage = [lvimage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    
+    MakeViewController * make = [[MakeViewController alloc]init];
+    
+    make.navigationItem.title = @"制图";
+    
+    [self addchildVC:make image:xrImage selectImage:lvimage edg:UIEdgeInsetsMake(2, 0, -2, 0)];
+    
+    MyViewController * my = [[MyViewController alloc]init];
+    my.navigationItem.title = @"我的";
+    
+    [self addchildVC:my image:[UIImage imageNamed:@"wode"]selectImage:[UIImage imageNamed:@"wodelv"] edg:UIEdgeInsetsMake(5, 0, -5, 0)];
+    self.tabBar.tintColor = [UIColor greenColor];
+}
+- (void)addchildVC:(UIViewController *)childVC image:(UIImage *)image selectImage:(UIImage *)selectImage edg:(UIEdgeInsets)edg{
+    
+    UINavigationBar *bar = [UINavigationBar appearance];
+    bar.barStyle = UIBarStyleBlackOpaque;
+    
+    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:childVC];
+    nav.tabBarItem.image = image;
+    nav.tabBarItem.selectedImage = selectImage;
+    nav.tabBarItem.imageInsets = edg;
+    nav.tabBarController.tabBar.tintColor = [UIColor greenColor];
+    [self addChildViewController:nav];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

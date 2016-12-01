@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3A2D41B5708A15A894686FD4 /* libPods-douTu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C4E784B5F24276983A7559 /* libPods-douTu.a */; };
+		E951B66D1DF0164F0011B9BB /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E951B66C1DF0164F0011B9BB /* TabBarViewController.m */; };
+		E951B6731DF016960011B9BB /* MakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E951B6721DF016960011B9BB /* MakeViewController.m */; };
+		E951B6761DF019BA0011B9BB /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E951B6751DF019BA0011B9BB /* MyViewController.m */; };
+		E951B6791DF019CD0011B9BB /* SquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E951B6781DF019CD0011B9BB /* SquareViewController.m */; };
 		EDCD67C01DF0082900409001 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCD67BF1DF0082900409001 /* main.m */; };
 		EDCD67C91DF0082900409001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCD67C71DF0082900409001 /* Main.storyboard */; };
 		EDCD67CB1DF0082900409001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDCD67CA1DF0082900409001 /* Assets.xcassets */; };
@@ -38,6 +42,14 @@
 /* Begin PBXFileReference section */
 		03C4E784B5F24276983A7559 /* libPods-douTu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-douTu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C99307FFD76CD9DE69FEA7 /* Pods-douTu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douTu.release.xcconfig"; path = "Pods/Target Support Files/Pods-douTu/Pods-douTu.release.xcconfig"; sourceTree = "<group>"; };
+		E951B66B1DF0164F0011B9BB /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		E951B66C1DF0164F0011B9BB /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		E951B6711DF016960011B9BB /* MakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MakeViewController.h; path = douTu/Classes/MakeViewController.h; sourceTree = SOURCE_ROOT; };
+		E951B6721DF016960011B9BB /* MakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MakeViewController.m; path = douTu/Classes/MakeViewController.m; sourceTree = SOURCE_ROOT; };
+		E951B6741DF019BA0011B9BB /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyViewController.h; path = douTu/Classes/MyViewController.h; sourceTree = SOURCE_ROOT; };
+		E951B6751DF019BA0011B9BB /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyViewController.m; path = douTu/Classes/MyViewController.m; sourceTree = SOURCE_ROOT; };
+		E951B6771DF019CD0011B9BB /* SquareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SquareViewController.h; path = douTu/Classes/SquareViewController.h; sourceTree = SOURCE_ROOT; };
+		E951B6781DF019CD0011B9BB /* SquareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SquareViewController.m; path = douTu/Classes/SquareViewController.m; sourceTree = SOURCE_ROOT; };
 		EDCD67BB1DF0082900409001 /* douTu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douTu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCD67BF1DF0082900409001 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EDCD67C81DF0082900409001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,6 +176,8 @@
 				EDCD68031DF008FB00409001 /* Tool */,
 				EDCD68041DF008FB00409001 /* ViewController.h */,
 				EDCD68051DF008FB00409001 /* ViewController.m */,
+				E951B66B1DF0164F0011B9BB /* TabBarViewController.h */,
+				E951B66C1DF0164F0011B9BB /* TabBarViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -212,6 +226,8 @@
 		EDCD67F91DF008FB00409001 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E951B6711DF016960011B9BB /* MakeViewController.h */,
+				E951B6721DF016960011B9BB /* MakeViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -243,6 +259,8 @@
 		EDCD67FD1DF008FB00409001 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E951B6741DF019BA0011B9BB /* MyViewController.h */,
+				E951B6751DF019BA0011B9BB /* MyViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -274,6 +292,8 @@
 		EDCD68011DF008FB00409001 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E951B6771DF019CD0011B9BB /* SquareViewController.h */,
+				E951B6781DF019CD0011B9BB /* SquareViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -484,9 +504,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E951B6761DF019BA0011B9BB /* MyViewController.m in Sources */,
+				E951B66D1DF0164F0011B9BB /* TabBarViewController.m in Sources */,
 				EDCD68071DF008FB00409001 /* ViewController.m in Sources */,
+				E951B6731DF016960011B9BB /* MakeViewController.m in Sources */,
 				EDCD68061DF008FB00409001 /* AppDelegate.m in Sources */,
 				EDCD67C01DF0082900409001 /* main.m in Sources */,
+				E951B6791DF019CD0011B9BB /* SquareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
